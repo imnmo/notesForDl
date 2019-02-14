@@ -1,4 +1,4 @@
-Lesson one notes:
+Lesson 1 notes:
 
 * Contains 7 lessons and we tend to expect about 10 hours of homework
 * So totally expect about in 70 hours of work in total 
@@ -8,7 +8,7 @@ roughly 15 hrs pro week
 level/classify the text/supermarket prices/Netflix predictions etc and worldclass problems
 * Leave about the Naysayers, its doesnt need lot of learning and so on
 
-ADVICES:
+ADVICES
 --------
 --------
 
@@ -19,9 +19,10 @@ how to work with the data
 	* The best way to create models is to do lot of models and do lots of 
 	CODING and STUDY them CAREFULLY
 
-CODING:
+CODING
 --------
 --------
+### Data Preparation:
 * Do the shift + Enter for the coding part
 * three lines are special directives to the JP notebooks so called code magics 
 * load the library for the fast ai and fast ai sits on top of the Pytorch and one of the ways is that 
@@ -81,8 +82,81 @@ this is most important bit which I will teach in the course what works and what 
 * In Fast.ai everything returns is known as the data bunch object, of course we ll 
 learn about them, whats in them and so on.
 * As the data_bunch will contain the training data, validation data and/or test data.
-* Then we need to do the all of the data of same size specifically same mean, same
+* Then we need to do normalize the all of the data of same size specifically same mean, same
 standard deviation etc.., so using normalized function we would get the standard stuff out of the
 data.
+* Let us take a look at the few picture to make sure what we understood, 
+*data.show_batch* as you can see they are zoomed and cropped in a very decent way.
+* So what we are doing is also called as center cropping, that we grab the middle bit and resizing. 
+We'll talk about the cropping and resizing which is very important bit. 
+* **Data Augmentation** where it discusses about the how much and where to crop and we also resize the pictures 
+and sometimes we do padding
+* Why do we normalize the images? Because pixel values start out from 1- 255 and some pixel values/(channle RGB) tend
+to be really bright or dull or uneven. We try to normalize these RGB channels or pixel values to the 
+mean of 0 and Standard deviation of 1 , we'll learn bit about that later
+* So **if model isn't accurate , then one thing to check is the it contains if its Normalized**
+* Question: As GPU man is power of 2 does 256  sounds more practical than 224 on GPU utlization. The brief
+answer is model are designed for final layer be it 7 * 7 , so 2 pow if 7 ~ 224.
+* **To be a good practitioner will be able to looks at the data**  some might have rotated or conatin the text on them
+and so on.
+* Then not looking at the pictures is important but also the labels, so all of the labels are present 
+in as the classes.
+* SO these classes are the label which we extracted probably the 37 labels/classes
+* *data.c* is the length of the labels or classes. For regression and multi label classification**
+will do for now. 
 
-till[30 min]
+### Training the model:
+* A model will be trained at the fast.ai using something called as the *Learner* just like
+*dataBunch* general concept for data and there are sub classes to particular applications like 
+image 
+* A *learner* that can learn fit the model, and particular *convLearner* it means the convolution
+learner (which we'll learn more about that in later in next three lectures)
+* For the convLearner you need to say what's your data like  *dataBunch* what your path
+* Then you need to say whats your model , that particular kind of model called as resnet
+which works extremely well with what size you want or how big is it. 
+* One is the Reset-34 and other is Resnet-50 , when we started with smaller one because
+it will be faster.
+* That's all the bit you need to know about the architecture now, to really pick & the third parameter is
+called as the metrics which really gets printed out as it gets trained.
+* First time running the command, its downloading the resnet-34 pretrained weights:
+Whats is this particularly means this particular model/resnet-34  has already been trained for particular task
+The task it looked about 1.5 million pictures using a dataset called as imageNet. So we can 
+downlaod the pretrained weights. 
+* So we don't start  from fresh or from scratch but we just reuse the the resnet-34 pretarined weights.
+ & I don't think this our dataset of 37 classes has been seen by resnet-34
+* This particular resnet has already seen some of the images and knowns about picture
+and how to recognize the very few things
+* **Transfer Learning** its kind of using/reusing the pre-trained weights and applying the knowledge
+to our data sets -> we'll learn lot about them later.
+* We take a per-trained model and fit it so instead of taking from scratch. By doing
+this way of *transfer learning* 1/100th or less of the time of regular training and 
+1/100th less data for training potentially 1000 times.
+* Remember the Nikhails lesson on cricket , as you know there is no examples of cricket or baseball
+in the ImageNet but with just 30 examples (bare less), its just figured out. Nearly perfect classifier
+* Ok hold on for a moment, how can you say that it ables to recognize cricket or baseball
+**May be its cheating** its called **Over fitting** 
+* To make sure we don't over fit the data, we use something called as the **validation set**.
+A validation set is the set of images, that our model doesn't or will not able to look at.
+* So this metrics /error_rate gets printed out based on the validation set. 
+* When we created the data bunch it automatically created the validation set for us. 
+* We actually make it nearly impossible to not to use the validation set, because without that
+you never know if you are over-fitting as print out metrics and make sure learner doest see them and
+* Here at fast.ai we bake in the best practices and we built on the data bunch object
+* Now there is something called as the fit it, but i practice use the fit_one_cycle 
+the one_cycle fitting is dramatically better, we'll learn about them
+* Shift + tab will say what you need to parse it. Cycle length 
+* Now the epochs or how many times we go through the data set , how many we show the 
+dataset to the model and so it learn from it. 
+* If the same picture if sees too many times then it would over fit.
+* We'll also learn about fine tunning this number, but 4 is a good number. After 4 epochs 
+the error rate is 6% and about ~2 min 
+* It means 94% of time we picked exact dog/cat , now we ll look at the paper. Nice thing 
+in using the academic paper or kaggle datasets we can compare our solution with other
+kind of benchmark.
+* In academic papers there is section calls as the **Experiments** where we see the benchmark,
+at 2012 it was nearly 60% accuracy now its about 94% in our machine. 
+* **Motivation** You see DL is improving at the rate of 5-10% a year which no other fields has made it.
+ which in turn means DL can be applied to real world problem, its no longer myth or Hype.
+We can really solve bunch of good problems.
+[till 47 min]
+  
