@@ -158,5 +158,33 @@ at 2012 it was nearly 60% accuracy now its about 94% in our machine.
 * **Motivation** You see DL is improving at the rate of 5-10% a year which no other fields has made it.
  which in turn means DL can be applied to real world problem, its no longer myth or Hype.
 We can really solve bunch of good problems.
-[till 47 min]
+* We don't know why it works , but eventually we'll get to there 
+* **Most important is seeing what goes in and seeing what comes out**
+* We already start looking at **waht goes in** that's the sample of 
+*data.show_batch* INput: images/data and the next important thing is
+what goes out 
+* There is actually only other software which actually does try to do things
+like fast.ai is *keras*
+* Faster and training is faster; the lines of code is much larger (31)
+for keras on comparison to fast.ai
+* Question: Why are you using Resnet as supposed to use the inception
+-> the answer is architecture go t dawnbench and see the results 
+resnet will be good enough
+-> Models differ, edge computing for eg on mobile phone , run it on 
+the server and try to queyr on them
+* Now we got the trained model *see learn.fit_one_cycle()* what happened is
+creating a set of weight, if you have done liner regression or logistic regression 
+you might be familiar with the weights, we have found some co-efficients
+and parameters and it took 1.56 minutes
+* If you want to play around the model little bit more after and just want to
+save in the current then use *save method*
+* The save will be saved in the model sub-diretory where it came from
+* We have seen effectively **what goes in** using the *data_show* method
+* Now we will see **what comes out** using the class called **classificationInterpreteratin**
+* Using the Factory method *from learner* by passing learner, remember
+learner object knows two things **data** and **what the mdel**
+* So thats what needed to interpret the model with data and the trained model
+* Most important things to do is the plot them:
+	* Will learn about the loss function shortly 
+
   
