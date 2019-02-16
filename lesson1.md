@@ -1,4 +1,6 @@
-Lesson 1 notes:
+# Image classification:
+-----------------------
+-----------------------
 
 * Contains 7 lessons and we tend to expect about 10 hours of homework
 * So totally expect about in 70 hours of work in total 
@@ -8,8 +10,7 @@ roughly 15 hrs pro week
 level/classify the text/supermarket prices/Netflix predictions etc and world-class problems
 * Leave about the Naysayers, its doesn't need lot of learning and so on
 
-ADVICES
---------
+ADVICES:
 --------
 
 * You ll able to build the things much more faster than understanding in  the thoery and 
@@ -19,8 +20,7 @@ how to work with the data
 	* The best way to create models is to do lot of models and do lots of 
 	CODING and STUDY them CAREFULLY
 
-CODING
---------
+CODING:
 --------
 ### Data Preparation:
 * Do the shift + Enter for the coding part
@@ -133,6 +133,7 @@ this way of *transfer learning* 1/100th or less of the time of regular training 
 1/100th less data for training potentially 1000 times.
 * Remember the Nikhails lesson on cricket , as you know there is no examples of cricket or baseball
 in the ImageNet but with just 30 examples (bare less), its just figured out. Nearly perfect classifier
+### Validation:
 * Ok hold on for a moment, how can you say that it ables to recognize cricket or baseball
 **May be its cheating** its called **Over fitting** 
 * To make sure we don't over fit the data, we use something called as the **validation set**.
@@ -223,7 +224,6 @@ run them again i.e batch size
 
 ## Homework
 --------
---------
 * try to run the code and try to get your own data set
 * Franciso is putting a guide how to download the data(ggogle images)
 * get your GPU running and try to run your notebooks
@@ -233,11 +233,10 @@ say what success you had.
 
 ## Some more on datasets: 
 ------------
-------------
 * How to create labels for your dataset, because for your data set it wont be 
 a Regex base approach and can be of different formats
 * using MNIST models sometimes  
 * You could actually try to download the whole documentation and try to run the
 all the examples from them just like that
-
 * **Whats goes in and what goes out**
+
