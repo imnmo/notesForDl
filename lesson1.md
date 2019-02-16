@@ -4,9 +4,9 @@ Lesson 1 notes:
 * So totally expect about in 70 hours of work in total 
 * From my analysis its going to take about 5 hour per lecture plus 10 hour for the homework, so in total 
 roughly 15 hrs pro week
-*  IF you follow this 15 hour model and at the end you ll build up the Image clasification at the world class 
-level/classify the text/supermarket prices/Netflix predictions etc and worldclass problems
-* Leave about the Naysayers, its doesnt need lot of learning and so on
+*  IF you follow this 15 hour model and at the end you ll build up the Image classification at the world class 
+level/classify the text/supermarket prices/Netflix predictions etc and world-class problems
+* Leave about the Naysayers, its doesn't need lot of learning and so on
 
 ADVICES
 --------
@@ -71,8 +71,8 @@ labels from the data
 * lets say from the data. lets extract the labels using the  *from_name_re*	
 * So the *ImageDataBunch* takes the following files and path and pattern to extract and get tranforms
 finally the size.
-* The size says what size the images you want to work with beacuse there is a shortcoming of
-the current DL: which a GPU has to apply the same amount of instruction inorder to be fast
+* The size says what size the images you want to work with because there is a shortcoming of
+the current DL: which a GPU has to apply the same amount of instruction in order to be fast
 a varying shapes and sizes cannot do that.
 * So we have to make sure the images are of same size and shape
 * In part1 of the course, we ll be making the images just square
@@ -160,7 +160,7 @@ at 2012 it was nearly 60% accuracy now its about 94% in our machine.
 We can really solve bunch of good problems.
 * We don't know why it works , but eventually we'll get to there 
 * **Most important is seeing what goes in and seeing what comes out**
-* We already start looking at **waht goes in** that's the sample of 
+* We already start looking at **what goes in** that's the sample of 
 *data.show_batch* INput: images/data and the next important thing is
 what goes out 
 * There is actually only other software which actually does try to do things
@@ -171,20 +171,73 @@ for keras on comparison to fast.ai
 -> the answer is architecture go t dawnbench and see the results 
 resnet will be good enough
 -> Models differ, edge computing for eg on mobile phone , run it on 
-the server and try to queyr on them
+the server and try to query on them
 * Now we got the trained model *see learn.fit_one_cycle()* what happened is
 creating a set of weight, if you have done liner regression or logistic regression 
 you might be familiar with the weights, we have found some co-efficients
 and parameters and it took 1.56 minutes
 * If you want to play around the model little bit more after and just want to
 save in the current then use *save method*
-* The save will be saved in the model sub-diretory where it came from
+* The save will be saved in the model sub-directory where it came from
 * We have seen effectively **what goes in** using the *data_show* method
 * Now we will see **what comes out** using the class called **classificationInterpreteratin**
 * Using the Factory method *from learner* by passing learner, remember
-learner object knows two things **data** and **what the mdel**
+learner object knows two things **data** and **what the model**
 * So thats what needed to interpret the model with data and the trained model
 * Most important things to do is the plot them:
 	* Will learn about the loss function shortly 
+	* loss function will say how good is your predictions*
+	* top loss method just what are the top loss which we were really confident
+	* Apart from the *top_losses method another useful tool is called as the 
+	*confusion matrix* 
+	* Especially when having lot of classes don't use confusion matrix but use
+	**most_confused**
+* Lets make the model better, so how can we make them better?
+* using **Fine tuning**  since we use the per-trained model and try to run the lern_fit_
+on_cyle will just run on the last layers and be fast in fitting the model
+* But to really get it, do **unfreeze** says please train the whole model 
+* Then we call the *fit_one_cycle* again error is much worse 17%
+* Visualization of the convolutional neural networks layers and layers of
+computation its convultion as it goes over layers
+* Different layers of the neueral networsk represents different levels of
+semantic complexity and actually we dont want to change the layers but just
+build top of that.
+* Then bring back the where we was using *load* method so that we just load
+back the saved co-effcients or pre-weights
+* Then *learning rate finder* the  fastest rate at which the training model
+gets trained without getting ripped apart by using **lr_find** method
+* Then using the *learn.recorder.plot()* plot the results of the found results of 
+learning rate. The learning rate actually says **How quickly am I updating the parameters
+of the model* 
+* the **lr_find** defaults to 0.003 but thats too high and we would like to 
+bring that lower based on the current scenario lets try to select the value
+in between or in range of the better values  
+* Again unfreeze and pass the slice and pass it the slice and make the
+second part of the slice about where it gets getting worse 
+* I would say with this two stage its pretty much enough to get the 
+world class models of course you cannot win a Kaggle competition
+* Devops **If you run out of memory** try to make them smaller and 
+run them again i.e batch size 
 
-  
+
+
+## Homework
+--------
+--------
+* try to run the code and try to get your own data set
+* Franciso is putting a guide how to download the data(ggogle images)
+* get your GPU running and try to run your notebooks
+* repeat the process on your own dataset and get on the forum and 
+say what success you had.
+* say your constraints and everything you hit on the model.
+
+## Some more on datasets: 
+------------
+------------
+* How to create labels for your dataset, because for your data set it wont be 
+a Regex base approach and can be of different formats
+* using MNIST models sometimes  
+* You could actually try to download the whole documentation and try to run the
+all the examples from them just like that
+
+* **Whats goes in and what goes out**
