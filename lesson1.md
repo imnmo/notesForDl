@@ -1,6 +1,5 @@
 # Image classification:
 -----------------------
------------------------
 
 * Contains 7 lessons and we tend to expect about 10 hours of homework
 * So totally expect about in 70 hours of work in total 
