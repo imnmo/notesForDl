@@ -239,3 +239,25 @@ a Regex base approach and can be of different formats
 all the examples from them just like that
 * **Whats goes in and what goes out**
 
+## Homework:  parts completed ✅
+- crestle.ai
+- Started with aws but is expensive and moved to cheaper RI based crestle
+  later will move to GCP as it cheaper. 	
+- read & run lesson1-pets.ipynb notebook
+- read [Tips for Building Image dataset](https://forums.fast.ai/t/tips-for-building-large-image-datasets/26688)
+- read [Lesson 1 notes](https://forums.fast.ai/t/deep-learning-lesson-1-notes/27748)
+- read fastai documentation
+- run lesson1-pets.ipynb
+- get your own image dataset
+  - Repeat process on your own dataset
+  - Share on Forums X
+- did the oxford dataset and achieved 50% accuracy which is pretty low,
+may be the data sets was not cleaned up like garbage in and garbage out as probably
+I missed good split for train/validation/test split?
+- Challenge was to get the right dataset or DataBunch object as it was the 
+difficult task for me and what dataset to start with spent too much on datasets.
+
+## TOtal Time Spent 🕜:clock130:
+5 hours for lecture + 5 hr on homework + 2 hr on googling and learning
+= 12 hours.
+
