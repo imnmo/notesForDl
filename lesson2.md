@@ -102,7 +102,7 @@ if we see a colored pictured it would be the tensor or just contains the 3rd dim
 * Adam geitgey.
 * Reproduce the temp vs ice cream dots with equation 
 * Question: when genertaing new dataset how much should be get??
- 
+ [till 1.08]
 
 
 
