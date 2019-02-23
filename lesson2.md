@@ -102,7 +102,52 @@ if we see a colored pictured it would be the tensor or just contains the 3rd dim
 * Adam geitgey.
 * Reproduce the temp vs ice cream dots with equation 
 * Question: when genertaing new dataset how much should be get??
- [till 1.08]
+  * You got a good learning rate no higher or no lower
+  * you are training for longer time and your accuracy is not good enough.
+  * Usuallay get more data.then you get higher accauracy lower error rate without 
+  any overfitting.
+  * Start with small amount of data and get started and then go about further
+	* which organizations most of the times do it wrong is gathering a bunch of data most time which 
+	   they dont need.
+* Question: What if its unbalanced data ? nothing just try it, it will work
+* ResNET 34 is just a function, it doesn't take any room or any special space.
+* Remember RESNET 34 it just says its a  line or quadratic or anything like that
+	-> again its just a architecture rather than the anything you might think of, we'll learn
+		more about that in the upcoming lecture.
+* only on the step **load('stage-1')** where we actually store the values,
+or the pre-trained weights like Y = aX + b, where a,b are the pre-trained weights.
+* But resnet34 you just don't store just two numbers but you ll store a bunch of
+million or so.
+* Derive the equation from simple Y= aX + b to Y = a1X1 + a2X2
+			```math 
+			Lets say,
+			Y = aX + b
+			with matrices and vectors we get,
+			Y = a1X1 + a2X2 where i.X2 = 1,
+			we know from dot product rule, Y = Xa 
+			the a & b are going to fit the line somehow
+			```
+* This somehow technique is called as the SGD!
+* SGD is two variants: Student gradient descent, where I did something and just learnt some stuff by trying and
+type is called as **Stochastic gradient descent**
+* Lets generate a synthetic data and we ll learn about the Pytorch
+* **tensor** means **Array** and in the world of deep learning, it just means
+array. jagged array is not a tensor
+* Tesnor is an array a rectangular, cube where row or every column of same 
+length like *4 X 3* is a tensor
+* An Image is an 3d tensor 
+* No dimensions with tesnors but either **Rank** or just **Axes** 
+rank means how many axes are there. An Image generally is Rank 3 tensor
+* in maths its called rank1 tensor as vectors and rank2 tensor as matrices and
+rank3 tensor as something. If you got 64images then its called as rank4 tensors
+beacuse its 3-d of image and 1-d or rank of the 64
+* Follow the math create a tensor of n,2 where n is the rows and 2 is the 
+coloumn
+* and then take the zeroth coloumn and distribute between -1 to 1
+* Important bits in Pytorch: How to create an array and how to mutate an array or change the array
+and finally how to do matrix multiplication 
+*  [Till 1.25]
+			
 
 
 
