@@ -146,7 +146,45 @@ coloumn
 * and then take the zeroth coloumn and distribute between -1 to 1
 * Important bits in Pytorch: How to create an array and how to mutate an array or change the array
 and finally how to do matrix multiplication 
-*  [Till 1.25]
+* Matplotlib is pretty much good to do quiet a lot of things. 
+* How are we doing this th whole neural nets stuff within RESNET 34 **its SGD** 
+* As humans have hard time in printing or visualizing 50 million points at one shot
+and plotting them -> but internally its just the **SGD**
+* Remeber MSE and calculating co-efficients and then the splitting of lines and the rotation
+* Actual is **Y** and predicted **Y_hat**
+* Always do the calculations with neural nets using the floats not with 
+ints , beacuse thats going to hit dummy out of you.
+* Now SGD,  is always taking a guess and making it better 
+	* There only two parameters within SGD 
+	* A. intercept: 
+	  B. the slope : + ve or - ve
+    * using calculus we can use the **Derivative** will say it to you 
+	  is moving up or down will make it better or  	
+	* SO gradient or derivative will say how changing A1 up or down will change MSE
+	* the derivative is stuck inside a attribute called as *grade*
+    * Now take a co-efficients **a** and just subtract **a.sub_** the underscore **_* 
+	 will happen inplace, the grade will say that if the I move downwards the loss
+	 goes up and if I move upwards the loss goes down. 
+	* Then **lr** 
+* try to run the notebooks and get a feeling how it looks like.
+* Vocab:
+		-> Lr the multiplied with gradient to say how much we update the weights for
+		-> Epoch is one complete run on our data points or images, Non statchistic way is the
+		   every single loop we did within our data set
+		-> Minbatch -> the smallest batch to run all our images (lets say we have 1000 images and our minbatch
+		   is about 10 images)
+		-> **caveat** dont do too much of epochs as it will try to make overfitting
+        -> SGD is using minibatch
+        -> model architectre is on the RESNET34 or RESNET 50
+        -> parameters or weights or co-efficients you are updating for loss functions
+* **Regularation** is not only works well only the set we have just trained but also
+on the unseen data
+* **validation set** is the sole purpose of that and with this we can say
+ that somebody is selling snake oil or not.
+*  
+*  			
+	  
+ 
 			
 
 
@@ -154,14 +192,12 @@ and finally how to do matrix multiplication
 
 ## Homework
 --------
-
-
-## Some more on datasets: 
-------------
-
+* Build webAPP/scale it.
+* do the same.
 
 ## Homework:  parts completed 
 
 ## TOtal Time Spent 🕜:clock130:
+* 5 hours on lecture.
 
 
