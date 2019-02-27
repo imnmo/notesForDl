@@ -194,10 +194,11 @@ on the unseen data
 --------
 * Completed the rugby vs american football classifier (pretty good accuracy and can twek them effectively)
 
-## TODOS:
+## TODOS:[Complete package]
 ---------
-* Move to AWS from crestle.
-* Build webAPP/scale it.
+* Move to AWS from crestle using AWS server setup
+* Build webAPP/scale it using AWS beanstalk
+* Run it as kubernetes using https://github.com/cablespaghetti/kubeadm-aws
 
 
 ## TOtal Time Spent 🕜:clock130:
