@@ -192,12 +192,16 @@ on the unseen data
 
 ## Homework
 --------
-* Build webAPP/scale it.
-* do the same.
+* Completed the rugby vs american football classifier (pretty good accuracy and can twek them effectively)
 
-## Homework:  parts completed 
+## TODOS:
+---------
+* Move to AWS from crestle.
+* Build webAPP/scale it.
+
 
 ## TOtal Time Spent 🕜:clock130:
-* 5 hours on lecture.
+* 9 hours on lecture + Homeowrk.
+
 
 
