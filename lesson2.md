@@ -199,4 +199,4 @@ on the unseen data
 
 ## TOtal Time Spent 🕜:clock130:
 * 5 hours on lecture.
-* 3 hrs on Homework awwesome accuracy
+* 5 hrs on Homework awesome accuracy
