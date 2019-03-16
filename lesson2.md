@@ -181,19 +181,12 @@ ints , beacuse thats going to hit dummy out of you.
 on the unseen data
 * **validation set** is the sole purpose of that and with this we can say
  that somebody is selling snake oil or not.
-*  
-*  			
-
-
-
-
-
 
 
 ## Homework
 --------
-* Build webAPP/scale it.[Still on Progress]
-* do the same.
+* Build webAPP/scale it.[Stopped as deplyoment is not
+very much needed for me ]
 
 ## Homework:  parts completed
 
