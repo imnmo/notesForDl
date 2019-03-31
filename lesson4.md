@@ -20,5 +20,9 @@ movie reviews. Even if we have 25,000 movies review saying that I like this one 
 * The trick is to use the **Transfer Learning**
 * Its exactly like the computer vision model, use the pre-trained model which is trained to use something different
 * FOr imageNet is originally used to predict the 1000 types of the photos and people fine tune them to use for all kind of predictions
-* So using the same analogy we will start using the language model, use that as the pre-trained model.
-* till [7.00] 
+* So using the same analogy we will start using the **language model**, use that as the pre-trained model.
+* A language_model is that learns to predict next word of a sentence
+* So in order to do that you need good grasp of the english and quite lot of world knowledge
+* Previous approach to NLP was to add **n-grams** which says the how often it appears
+* Pre-trained with wiki and train with language model on the IMdb
+* 
